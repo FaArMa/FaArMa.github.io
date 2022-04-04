@@ -20,6 +20,10 @@
     --color2: #444444;
     --color3: #ededed;
     --color4: #171717;
+    --font-size: calc(14px + (16 - 14) * ((100vw - 400px) / (1920 - 400)));
+    --margin-top-bottom: calc(48px + (44 - 48) * ((100vw - 400px) / (1920 - 400)));
+    --margin-left-right: calc(24px + (512 - 24) * ((100vw - 400px) / (1920 - 400)));
+    --navbar-height: calc(48px + (44 - 48) * ((100vw - 400px) / (1920 - 400)));
 }
 
 
@@ -32,14 +36,12 @@ body {
     background-color: var(--color4);
     color: var(--color3);
     font-family: "Space Mono", "Noto Mono", "Oxygen Mono" , Courier, monospace;
-    font-size: calc(14px + (16 - 14) * ((100vw - 400px) / (1920 - 400)));
+    font-size: var(--font-size);
     line-height: 1.8;
 }
 
 main {
-    /*max-width: 1024px;
-    margin: auto auto 48px;*/
-    margin: calc(48px + (44 - 48) * ((100vw - 400px) / (1920 - 400))) calc(24px + (512 - 24) * ((100vw - 400px) / (1920 - 400)));
+    margin: var(--margin-top-bottom) var(--margin-left-right);
 }
 
 h1 {
@@ -75,7 +77,7 @@ a:hover {
     background: radial-gradient(circle, var(--color2) 0%, var(--color4) 100%);
 	border-radius: 0px;
     font-family: 'Dosis', sans-serif;
-	height: 48px;
+	height: var(--navbar-height);
 }
 
 #menu ul, #menu li {
@@ -98,7 +100,7 @@ a:hover {
 	color: var(--color3);
 	display: block;
     font-size: 1.25em;
-	line-height: 48px;
+	line-height: var(--navbar-height);
 	padding: 0 16px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -118,7 +120,7 @@ a:hover {
 	background: var(--color1);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 355px){
 	#menu {
         display: none;
     }
