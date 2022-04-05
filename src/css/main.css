@@ -125,3 +125,20 @@ a:hover {
         display: none;
     }
 }
+
+
+
+
+/*
+ * Scrollbar
+ */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: var(--color4);
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    border-radius: 0px;
+}
