@@ -20,6 +20,10 @@
     --color2: #444444;
     --color3: #ededed;
     --color4: #171717;
+    --font-size: calc(14px + (16 - 14) * ((100vw - 400px) / (1920 - 400)));
+    --margin-top-bottom: calc(48px + (44 - 48) * ((100vw - 400px) / (1920 - 400)));
+    --margin-left-right: calc(24px + (512 - 24) * ((100vw - 400px) / (1920 - 400)));
+    --navbar-height: calc(48px + (44 - 48) * ((100vw - 400px) / (1920 - 400)));
 }
 
 
@@ -29,29 +33,28 @@
  * Otros
  */
 body {
-    color: var(--color3);
     background-color: var(--color4);
+    color: var(--color3);
     font-family: "Space Mono", "Noto Mono", "Oxygen Mono" , Courier, monospace;
-    font-size: 100%;
+    font-size: var(--font-size);
     line-height: 1.8;
 }
 
 main {
-    max-width: 1024px;
-    margin: auto auto 48px;
+    margin: var(--margin-top-bottom) var(--margin-left-right);
 }
 
 h1 {
-    font-family: 'Secular One', 'Play', sans-serif;
-    color: var(--color3);
-    text-transform: uppercase;
-    padding-bottom: 0.3em;
-    font-size: 1.5em;
     border-bottom: 1px solid var(--color1);
-    margin-top: 24px;
-    margin-bottom: 16px;
+    color: var(--color3);
+    font-family: 'Secular One', 'Play', sans-serif;
+    font-size: 1.5em;
     font-weight: 600;
     line-height: 1.25;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -70,17 +73,17 @@ a:hover {
  * Navbar
  */
 #menu {
-    font-family: 'Dosis', sans-serif;
     background: var(--color2);
     background: radial-gradient(circle, var(--color2) 0%, var(--color4) 100%);
-	height: 48px;
 	border-radius: 0px;
+    font-family: 'Dosis', sans-serif;
+	height: var(--navbar-height);
 }
 
 #menu ul, #menu li {
+	list-style: none;
 	margin: 0 auto;
 	padding: 0;
-	list-style: none;
 }
 
 #menu ul {
@@ -88,24 +91,24 @@ a:hover {
 }
 
 #menu li {
-	float: left;
 	display: inline;
+	float: left;
 	position: relative;
 }
 
 #menu a {
+	color: var(--color3);
 	display: block;
-	line-height: 48px;
+    font-size: 1.25em;
+	line-height: var(--navbar-height);
 	padding: 0 16px;
 	text-decoration: none;
-	color: var(--color3);
-    font-size: 1.25em;
 	text-transform: uppercase;
 }
 
 #menu li a:hover {
-	color: var(--color3);
 	background: var(--color1);
+	color: var(--color3);
 }
 
 #menu li:hover {
@@ -113,11 +116,11 @@ a:hover {
 }
 
 #menu a:hover{
-	background: var(--color1);
 	color: var(--color3);
+	background: var(--color1);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 355px){
 	#menu {
         display: none;
     }
