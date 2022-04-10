@@ -30,12 +30,59 @@
 
 
 /*
+ * Fonts
+ */
+@font-face {
+    font-family: "Dosis";
+    font-weight: 400;
+    src:
+        local("Dosis"),
+        url("../fonts/Dosis-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Play";
+    font-weight: 700;
+    src:
+        local("Play"),
+        url("../fonts/Play-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Secular One";
+    font-weight: 400;
+    src:
+        local("Secular One"),
+        url("../fonts/SecularOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Space Mono";
+    font-weight: 400;
+    src:
+        local("Space Mono"),
+        url("../fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oxygen Mono";
+    font-weight: 400;
+    src:
+        local("Oxygen Mono"),
+        url("../fonts/OxygenMono-Regular.ttf");
+}
+
+
+
+
+/*
  * Otros
  */
 body {
     background-color: var(--color4);
     color: var(--color3);
-    font-family: "Space Mono", "Noto Mono", "Oxygen Mono" , Courier, monospace;
+    font-family: "Space Mono", "Oxygen Mono" , Courier, monospace;
+    font-weight: 400;
     font-size: var(--font-size);
     line-height: 1.8;
 }
@@ -49,7 +96,7 @@ h1 {
     color: var(--color3);
     font-family: 'Secular One', 'Play', sans-serif;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.25;
     margin-bottom: 1em;
     margin-top: 1.5em;
