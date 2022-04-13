@@ -33,6 +33,7 @@
  * Fonts
  */
 @font-face {
+    font-display: swap;
     font-family: "Dosis";
     font-weight: 400;
     src:
@@ -41,6 +42,16 @@
 }
 
 @font-face {
+    font-display: swap;
+    font-family: "Oxygen Mono";
+    font-weight: 400;
+    src:
+        local("Oxygen Mono"),
+        url("../fonts/OxygenMono-Regular.ttf");
+}
+
+@font-face {
+    font-display: swap;
     font-family: "Play";
     font-weight: 700;
     src:
@@ -49,6 +60,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Secular One";
     font-weight: 400;
     src:
@@ -57,19 +69,12 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: "Space Mono";
     font-weight: 400;
     src:
         local("Space Mono"),
         url("../fonts/SpaceMono-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Oxygen Mono";
-    font-weight: 400;
-    src:
-        local("Oxygen Mono"),
-        url("../fonts/OxygenMono-Regular.ttf");
 }
 
 
