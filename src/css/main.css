@@ -115,6 +115,10 @@ h1 {
     text-transform: uppercase;
 }
 
+ul {
+    list-style: circle inside;
+}
+
 a:link, a:visited, a:hover, a:active {
     color: #58a6ff;
     text-decoration: none;
