@@ -96,6 +96,12 @@ main {
     margin: var(--margin-top-bottom) var(--margin-left-right);
 }
 
+@media screen and (max-width: 355px) {
+    main {
+        margin: var(--margin-top-bottom) 1.12ch;
+    }
+}
+
 h1 {
     border-bottom: 1px solid var(--color1);
     color: var(--color3);
