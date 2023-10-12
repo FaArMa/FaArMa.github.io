@@ -187,8 +187,14 @@ a:hover {
 }
 
 @media screen and (max-width: 355px) {
-    #menu {
-        display: none;
+    #menu a {
+        font-size: 0;
+        line-height: 2.5rem;
+    }
+
+    #menu a::before {
+        content: attr(data-emoji);
+        font-size: 1.25rem;
     }
 }
 
