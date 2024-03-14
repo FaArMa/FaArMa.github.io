@@ -83,6 +83,10 @@
 /*
  * Otros
  */
+html {
+    scroll-padding-top: 1em;
+}
+
 body {
     background-color: var(--color4);
     color: var(--color3);
