@@ -190,7 +190,7 @@ a:hover {
     color: var(--color3);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
     #menu a {
         font-size: 0;
         line-height: 2.5rem;
